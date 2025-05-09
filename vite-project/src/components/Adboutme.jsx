@@ -10,9 +10,9 @@ export default function Adboutme() {
 
 
   return (
-    <div className=' bg-black text-white px-5'>
+    <div className=' bg-black text-white '>
 
-        <div className=' text-4xl px-10'>
+        <div className=' text-4xl '>
         <h1>About me</h1>
         </div>
 
