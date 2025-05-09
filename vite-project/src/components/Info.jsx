@@ -16,8 +16,8 @@ export default function Info() {
                   </div>
                   <br />
                   <div className=' text-2xl'>
-                    <h1>I am front end developer </h1>
-                  </div>
+                    <h1>I am front end developer within 3 months </h1>
+                  </div> 
                   <br />
                   <br />
                   <div className=' flex justify-between'>
@@ -27,7 +27,7 @@ export default function Info() {
                         <h1 className='   py-1.5 '><a href="">DOWNLOAD</a></h1>
                         </div>
                         <div className=' flex justify-around text-4xl gap-10  '>
-                        <a className='hover:scale-120 transition-all duration-300' href=""><FaGithub /></a>
+                        <a className='hover:scale-120 transition-all duration-300 ' href=""><FaGithub /></a>
                         <a className='hover:scale-120 transition-all duration-300' href=""><FaLinkedinIn /></a>
 
                         </div>

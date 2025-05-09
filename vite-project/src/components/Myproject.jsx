@@ -14,7 +14,7 @@ export default function Myproject() {
 
 
   return (
-    <div className=' py-20 bg-black text-yellow-300'>
+    <div className=' py-20 bg-black text-yellow-400'>
         
 
         <div className='text-4xl text-cyan-200 bg-black'>
@@ -25,16 +25,16 @@ export default function Myproject() {
             {
                 data.map((item,key)=>(
                         <div className=' flex justify-center gap-20 items-center-safe'>
-                    <div className=' h-[200px] w-[200px]'>
+                    <div className=' h-[200px] w-[200px] py-5'>
                             <img src={item.title4} alt="" />
                     </div>
 
                     <div className='text-center '>
-                        <h1>{item.title1}</h1>
+                        <h1 className=' text-4xl'>{item.title1}</h1>
                         <h1>{item.title2}</h1>
                         <div className=' flex justify-center gap-2 py-3 '>
-                            <a href=""><h1 className='border-cyan-400 border-2 h-[50px] w-[100px] py-2 bg-blue-600'>{item.title3}</h1></a>
-                           <div className=' text-2xl flex justify-center border-cyan-400 border-2 h-[50px] w-[100px] py-2 bg-blue-600'><a href=""><FaGithub /></a></div>
+                            <a href=""><h1 className='border-cyan-400 border-2 h-[50px] w-[100px] py-2 bg-blue-400 hover:bg-blue-800 '>{item.title3}</h1></a>
+                            <a href=""><div className=' text-2xl flex justify-center border-cyan-400 border-2 h-[50px] w-[100px] py-2 bg-blue-400 hover:bg-blue-800'><FaGithub /></div></a>
                         </div>
                     </div>
                         </div>
