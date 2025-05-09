@@ -14,7 +14,7 @@ export default function Myproject() {
 
 
   return (
-    <div className=' py-20 bg-black text-yellow-400'>
+    <div className=' py-20 bg-black text-yellow-400 px-5 '>
         
 
         <div className='text-4xl text-cyan-200 bg-black'>

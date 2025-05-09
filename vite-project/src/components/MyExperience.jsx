@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function MyExperience() {
   return (
-    <div className=' bg-black text-white py-20'>
+    <div className=' bg-black text-white py-20 px-7'>
 
         <div className='text-6xl text-center'>
             <h1>EXPERIENCE</h1>

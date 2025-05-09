@@ -10,7 +10,7 @@ export default function Adboutme() {
 
 
   return (
-    <div className=' bg-black text-white'>
+    <div className=' bg-black text-white px-5'>
 
         <div className=' text-4xl px-10'>
         <h1>About me</h1>
@@ -18,7 +18,7 @@ export default function Adboutme() {
 
         <div className=' flex justify-between py-5 text-2xl gap-10 px-15'>
             <div>
-                <h1>Aspiring software developer with hands-on experience from a 6-month internship at Sqilco. Passionate about coding, problem-solving, and building innovative solutions. Currently in 11th standard, continuously learning and exploring new technologies to shape the future of software development.</h1>
+                <h1>Aspiring software developer with hands-on experience from a 6-month internship at Sqilco. Passionate about coding, problem-solving, and building innovative solutions. Currently in college 1st year, continuously learning and exploring new technologies to shape the future of software development.</h1>
             </div>
 
             <div className='  w-500  text-center bg-black text-white'>
