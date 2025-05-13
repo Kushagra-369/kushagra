@@ -5,10 +5,13 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 
 export default function Info() {
+
+
+  
   return (
     <div>
-        <div className=' flex justify-between py-10 px-5 bg-black text-yellow-400 gap-10'>
-                <div>
+        <div className=' text-2xl  md:flex justify-between py-10 px-5 bg-black text-yellow-400 gap-10 '>
+                <div className='' >
                   <div className='text-6xl'>
                     <h1>FRONT END DEVELOPER</h1>
                     <br />
