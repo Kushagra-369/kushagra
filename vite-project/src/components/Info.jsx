@@ -42,7 +42,7 @@ export default function Info() {
                 </div>
         
                 <div >
-                  <img className='h-[200px] md:h-[450px] md:w-150' src={image1} alt="" />
+                  <img className='h-[250px] w-50 md:h-[450px] md:w-150' src={image1} alt="" />
                 </div>
               </div>
     </div>

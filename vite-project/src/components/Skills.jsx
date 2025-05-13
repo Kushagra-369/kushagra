@@ -10,9 +10,9 @@ export default function Skills() {
     return (
         <div className=' text-white bg-black text-center items-center py-20'>
             <div className=' text-white  text-center'>
-                <h1 className='text-6xl'>SKILLS</h1>
+                <h1 className='text-4xl md:text-6xl'>SKILLS</h1>
                 <br />
-                <div className=' text-2xl'>
+                <div className='text-sm md:text-2xl'>
                     <h1>I worked on various frontend projects. Check them <a className=' border-b-2 border-amber-300' href="">there</a></h1>
                 </div>
                 <br />
