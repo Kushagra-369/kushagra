@@ -10,15 +10,15 @@ export default function Info() {
   
   return (
     <div>
-        <div className=' text-2xl  md:flex justify-between py-10 px-5 bg-black text-yellow-400 gap-10 '>
-                <div className='' >
-                  <div className='text-6xl'>
+        <div className=' text-2xl flex justify-between py-20 md:py-10 px-5 bg-black text-yellow-400 gap-10 '>
+                <div className='w-50 md:w-250' >
+                  <div className=' md:text-6xl'>
                     <h1>FRONT END DEVELOPER</h1>
                     <br />
                     <h1>Hey , I am KUSHAGRA CHHABRA</h1>
                   </div>
                   <br />
-                  <div className=' text-2xl'>
+                  <div className='text-sm md:text-2xl'>
                     <h1>I am front end developer within 3 months </h1>
                   </div> 
                   <br />
@@ -42,7 +42,7 @@ export default function Info() {
                 </div>
         
                 <div >
-                  <img className=' h-[450px] w-150' src={image1} alt="" />
+                  <img className='h-[200px] md:h-[450px] md:w-150' src={image1} alt="" />
                 </div>
               </div>
     </div>
