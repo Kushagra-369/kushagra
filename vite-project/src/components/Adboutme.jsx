@@ -21,7 +21,7 @@ export default function Adboutme() {
                 <h1>Aspiring software developer with hands-on experience from a 6-month internship at Sqilco. Passionate about coding, problem-solving, and building innovative solutions. Currently in college 1st year, continuously learning and exploring new technologies to shape the future of software development.</h1>
             </div>
 
-            <div className='  w-500  text-center bg-black text-white'>
+            <div className='w-250  md:w-500  text-center bg-black text-white'>
                 <h1>Let's connect</h1>
                 <div className='py-5'>
                 {
