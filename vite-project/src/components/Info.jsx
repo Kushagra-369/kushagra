@@ -50,8 +50,8 @@ export default function Info() {
      </div>
      </div>
 
-      <div className=' h-90 w-100  flex justify-center md:h-[500px] md:w-[400px] py-10  md:px-5  ' >
-        <img className='h-70 w-50 md:h-[400px]  md:w-[400px]' src={image1} alt="" />
+      <div className=' h-90 w-80 flex justify-center md:h-[500px] md:w-[400px] py-10  md:px-5  ' >
+        <img className='h-70 w-50 md:h-[400px]  md:w-[400px] ' src={image1} alt="" />
       </div>
     </div>
 
