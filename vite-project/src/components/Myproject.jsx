@@ -24,9 +24,9 @@ export default function Myproject() {
         <div className='py-10 px-5'>
             {
                 data.map((item,key)=>(
-                        <div className=' flex justify-center gap-20 items-center-safe'>
-                    <div className=' h-[200px] w-[200px] py-5'>
-                            <img src={item.title4} alt="" />
+                        <div className=' flex justify-center gap-10 md:gap-20 items-center-safe'>
+                    <div className=' md:h-[200px] md:w-[200px] py-5'>
+                            <img className='h-30 w-100 md:w-60 md:h-30' src={item.title4} alt="" />
                     </div>
 
                     <div className='text-center '>

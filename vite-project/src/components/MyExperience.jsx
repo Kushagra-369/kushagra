@@ -15,7 +15,7 @@ export default function MyExperience() {
             </div>
 
             <div className=' py-2'>
-                <h1>i have completed 6 month internship program in sqilco.</h1>
+                <h1>i have completed 3 month internship program in sqilco.</h1>
             </div>
            </div>
         </div>
