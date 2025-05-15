@@ -11,11 +11,11 @@ export default function App() {
     <div>
       <Navbar/>
        <Info/>
-      <Myteach/>
+      {/* <Myteach/>
       <Skills/>
        <Myproject/>  
        <MyExperience/>   
-       <Adboutme/>  
+       <Adboutme/>   */}
     </div>
   )
 }
