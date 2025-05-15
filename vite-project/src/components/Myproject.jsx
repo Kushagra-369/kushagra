@@ -30,7 +30,7 @@ export default function Myproject() {
                     </div>
 
                     <div className='text-center '>
-                        <h1 className=' text-4xl'>{item.title1}</h1>
+                        <h1 className=' text-2xl md:text-4xl'>{item.title1}</h1>
                         <h1>{item.title2}</h1>
                         <div className=' flex justify-center gap-2 py-3 '>
                             <a href=""><h1 className='border-cyan-400 border-2 h-[50px] w-[100px] py-2 bg-blue-400 hover:bg-blue-800 '>{item.title3}</h1></a>
