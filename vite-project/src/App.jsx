@@ -10,12 +10,12 @@ export default function App() {
   return (
     <div>
       <Navbar/>
-      <Info/>
+       <Info/>
       <Myteach/>
       <Skills/>
        <Myproject/>  
        <MyExperience/>   
-       <Adboutme/>
+       <Adboutme/>  
     </div>
   )
 }

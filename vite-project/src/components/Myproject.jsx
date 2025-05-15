@@ -17,11 +17,11 @@ export default function Myproject() {
     <div className=' py-20 bg-black text-yellow-400 px-5 '>
         
 
-        <div className='text-4xl text-cyan-200 bg-black'>
+        <div className='text-4xl px-2 text-cyan-200 bg-black'>
             <h1>PORTFOLIO</h1>
         </div>
 
-        <div className='py-10 '>
+        <div className='py-10 px-5'>
             {
                 data.map((item,key)=>(
                         <div className=' flex justify-center gap-20 items-center-safe'>

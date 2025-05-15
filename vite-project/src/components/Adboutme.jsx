@@ -12,21 +12,21 @@ export default function Adboutme() {
   return (
     <div className=' bg-black text-white '>
 
-        <div className='text-3xl md:text-5xl '>
+        <div className='text-3xl md:text-5xl px-10 md:px-2 '>
         <h1>About me</h1>
         </div>
 
-        <div className=' flex justify-between py-5 md:text-2xl gap-10 px-15'>
+        <div className='flex flex-col md:flex md:flex-row  justify-between py-5 text-sm md:text-2xl gap-10 px-15'>
             <div>
                 <h1>Aspiring software developer with hands-on experience from a 6-month internship at Sqilco. Passionate about coding, problem-solving, and building innovative solutions. Currently in college 1st year, continuously learning and exploring new technologies to shape the future of software development.</h1>
             </div>
 
-            <div className='w-250  md:w-500  text-center bg-black text-white'>
-                <h1>Let's connect</h1>
-                <div className='py-5'>
+            <div className='w-full  md:w-500 border-2 rounded-4xl border-cyan-400 p-5  bg-black text-white'>
+                <h1 className=' '>Let's connect</h1>
+                <div className='py-5 flex flex-col gap-4'>
                 {
                     data.map((item,key)=>(
-                        <div className='py-2'>
+                        <div className='py-2  border-2 p-5 rounded-2xl '>
 
                             <input type={item.title2} placeholder={item.title1} />
                         </div>

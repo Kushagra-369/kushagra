@@ -39,7 +39,7 @@ export default function Navbar() {
       </div>
       {
                 text && (
-                    <ul className=' bg-gray-500 text-2xl text-yellow-300 absolute top-12  right-16'>
+                    <ul className=' w-full text-center bg-gray-500 text-2xl text-yellow-300 absolute top-18  left-7'>
                         {data2.map((item,key)=>(
                             <li><a href="">{item.title1}</a></li>
                         ))}
