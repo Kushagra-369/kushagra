@@ -35,7 +35,7 @@ export default function Adboutme() {
                 </div>
                 <div>
                 <a href="">
-                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold h-[50px] w-[270px] rounded " type="button">
+                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold h-[50px] w-[170px] rounded " type="button">
                 Send message
       </button>
       </a>
