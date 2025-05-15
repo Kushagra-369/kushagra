@@ -3,6 +3,7 @@ import image1 from '../assets/images/KKUU.jpg'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoDownloadOutline } from "react-icons/io5";
+import { TypeAnimation } from 'react-type-animation';
 
 
 
@@ -11,42 +12,48 @@ export default function Info() {
 
 
   return (
-    <div>
-      <div className=' text-3xl md:flex justify-between py-25 px-10 md:py-10 md:px-5 bg-black text-yellow-400 gap-10 '>
-        <div className='w-full' >
-          <div className=' md:text-6xl'>
-            <h1>FRONT END DEVELOPER</h1>
-            <br />
-            <h1>Hey , I am KUSHAGRA CHHABRA</h1>
-          </div>
-          <br />
-          <div className='text-sm md:text-2xl'>
-            <h1>I am front end developer within 3 months </h1>
-          </div>
-          <br />
-          <br />
-          <div className=' flex justify-between'>
-            <div className=' text-2xl'>
-              <div className=' flex justify-around gap-10 items-center'>
-                <div className=' items-center hover:scale-105 transition-all duration-300 w-[250px] h-[70px]  border-2 rounded-2xl border-cyan-300 text-center'>
-                  <h1 className=' flex gap-5 items-center px-10 text-center   py-3.5 '><h1>DOWNLOAD</h1><a href=""> <IoDownloadOutline /></a></h1>
-                </div>
-                <div className=' flex justify-around text-4xl gap-10  '>
-                  <a className='hover:scale-120 transition-all duration-300 ' href=""><FaGithub /></a>
-                  <a className='hover:scale-120 transition-all duration-300' href=""><FaLinkedinIn /></a>
 
-                </div>
-              </div>
-            </div>
+    <div className= ' items-center md:flex justify-between  md:px-5 py-10 bg-black ' >
+     <div className='px-10 md:px-0'>
+       <div className='h-[70px] w-[420] md:w-[450px] md:text-2xl text-white ' >
 
-          </div>
+        <TypeAnimation
+      sequence={[
+        1000,
+        'Front end developer ',
+        1000,
+        'Web designer',
+        1000
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{ fontSize: '2em', display: 'inline-block' }}
+      repeat={Infinity}
+    />  
+      </div>
 
-        </div>
+     <div>
+       <div className= 'text-3xl md:text-6xl text-white'>HEY , I AM</div>
+      <div className=' text-3xl md:text-5xl py-1 text-white '>KUSHAGRA CHHABRA</div>
+      <div className='md:text-2xl py-4 text-white'> I am a frontend developer within 3 months </div>
+      <div className=' text-white flex gap-5 items-center py-5 '>
+       <div className='flex items-center  py-10 border-2 border-cyan-300 h-20 w-50 rounded-2xl text-2xl text-center'> 
+        <h1 className=' px-5'>Download</h1> <a href=""><IoDownloadOutline/>  </a>
+       </div>
+       <div className=' text-4xl'>
+        <FaGithub/>
+       </div>
+       <div className=' text-4xl'>
+        <FaLinkedinIn/>
+       </div>
+      </div>
+     </div>
+     </div>
 
-        <div className='py-20 md:py-5 text-center items-center ' >
-          <img className='h-[400px] w-full md:h-[450px] md:w-150' src={image1} alt="" />
-        </div>
+      <div className=' h-90 w-100  flex justify-center md:h-[500px] md:w-[400px] py-10  md:px-5  ' >
+        <img className='h-70 w-50 md:h-[400px]  md:w-[400px]' src={image1} alt="" />
       </div>
     </div>
+
   )
 }
