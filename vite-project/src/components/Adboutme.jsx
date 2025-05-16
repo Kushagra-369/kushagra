@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Element } from 'react-scroll';
 
 export default function Adboutme() {
 
@@ -10,7 +11,8 @@ export default function Adboutme() {
 
 
   return (
-    <div className=' bg-black text-white '>
+    <Element name = "connect">
+        <div className=' bg-black text-white '>
 
         <div className='text-3xl md:text-5xl px-10 md:px-2 '>
         <h1>About me</h1>
@@ -43,5 +45,6 @@ export default function Adboutme() {
             </div>
         </div>
     </div>
+    </Element>
   )
 }

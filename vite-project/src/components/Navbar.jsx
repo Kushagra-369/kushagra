@@ -1,55 +1,65 @@
 import React, { useState } from 'react'
 import { FaBars } from "react-icons/fa6";
 import { GiSplitCross } from "react-icons/gi";
-import { Link, Element } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 export default function Navbar() {
 
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-  let data2 = [
-    { href: "", title1: "HOME" , },
-    { href: "", title1: "PORTFOLIO" },
-    { href: "", title1: "CONTACT" }
+  const navItems = [
+    { href: "", title1: "HOME" ,title2 : ""},
+    { href: "", title1: "PORTFOLIO",title2 : "portfolio" },
+    { href: "", title1: "CONNECT",title2 : "connect" }
   ];
 
-  const[text,settext]=  useState(false)
-
-  const cross=()=>{
-    settext(!text)
-  }
-
   return (
-    <div className=' bg-black '>
-        <div className=' flex justify-between py-5 px-10 items-center bg-black text-green-400 font-bold gap-10'>
-        <div className='text-4xl hover:border-b-2   border-cyan-400'>
+    <div className='bg-black relative'>
+      <div className='flex justify-between py-5 px-10 items-center bg-black text-green-400 font-bold gap-10'>
+        <div className='text-4xl hover:border-b-2 border-cyan-400'>
           <a href=""><h1>Kushagra</h1></a>
         </div>
-        
-        <ul className='  hidden md:flex justify-between gap-20 text-2xl '>
-          {
-            data2.map((item,key) =>(
-            <Link to="portfolio" smooth={true} duration={500}><li className='hover:border-b-2 border-cyan-400 hover:text-blue-500 hover:bg-yellow-300 '>{item.title1}</li></Link>
-  
-          ))
-        }
+
+        {/* Desktop Menu */}
+        <ul className='hidden md:flex justify-between gap-20 text-2xl'>
+          {navItems.map((item, key) => (
+            <Link key={key} to={item.title2} smooth={true} duration={500}>
+              <li className='hover:border-b-2 border-cyan-400 hover:text-blue-500 hover:bg-yellow-300'>
+                {item.title1}
+              </li>
+            </Link>
+          ))}
         </ul>
 
-           <div onClick={cross} className=' md:hidden block px-5 '>
-          {text ?   <GiSplitCross/> : <FaBars/>}
-      </div>
-      {
-                text && (
-                    <ul className=' w-full text-center bg-gray-500 text-2xl text-yellow-300 absolute top-18  left-7'>
-                        {data2.map((item,key)=>(
-                            <li key={key}><Link to="portfolio"smooth={true} duration={500}>{item.title1}</Link></li>
-                        ))}
-                    </ul>
-                )
-            }
+        {/* Mobile Icon */}
+        <div onClick={toggleMenu} className='md:hidden block px-5 z-50 text-3xl text-green-400'>
+          {menuOpen ? <GiSplitCross /> : <FaBars />}
+        </div>
       </div>
 
-   
+      {/* Mobile Menu - Slide in from right */}
+      {menuOpen && (
+        <div className='md:hidden fixed top-0 right-0 h-full w-full bg-gray-800 text-yellow-300 p-10 z-40 shadow-lg transition-all duration-300'>
+          <ul className='flex flex-col gap-10 text-2xl'>
+            {navItems.map((item, key) => (
+              <li key={key}>
+                <Link
+                  to={item.title2}
+                  smooth={true}
+                  duration={500}
+                  onClick={toggleMenu} 
+                >
+                  {item.title1}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
-  )
+  );
 }
