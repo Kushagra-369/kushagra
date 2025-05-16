@@ -20,26 +20,26 @@ export default function Skills() {
             </div >
             <div className='  flex justify-center ' >
 
-               <div className='hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl w-[300px] h-[250px]' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
-               <h1 className="text-center text-2xl text-cyan-300">Frontend</h1>
-                <br />
+                <div className='hover:scale-105 transition-all duration-300 border-red-700 border-4 bg-black rounded-2xl w-[300px] h-[250px]' style={{ boxShadow: '4px 4px 50px rgba(62, 242, 7, 0.943)' }}>
+                    <h1 className="text-center text-2xl text-cyan-300">Frontend</h1>
+                    <br />
 
-                <div className='flex justify-around items-center text-2xl gap-5 text-center'>
-                 <a href="" className=' text-orange-500 flex justify-between gap-2'><FaHtml5 />HTML</a>
-                 <a href="" className=' text-blue-500 flex justify-between gap-2'><FaCss3Alt />CSS  </a>
+                    <div className='flex justify-around items-center text-2xl gap-5 text-center'>
+                        <a href="" className=' text-orange-500 flex justify-between gap-2'><FaHtml5 />HTML</a>
+                        <a href="" className=' text-blue-500 flex justify-between gap-2'><FaCss3Alt />CSS  </a>
+                    </div>
+                    <br />
+                    <div className='flex justify-around items-center text-2xl gap-5'>
+                        <a href="" className=' text-green-300 flex justify-between gap-2'><IoLogoSass />SASS</a>
+                        <a href="" className=' text-red-500 flex justify-between gap-2'><BsBootstrap />
+                            SASS</a>
+                    </div>
+                    <br />
+                    <div className='flex justify-around items-center text-2xl gap-5'>
+                        <a href="" className=' text-yellow-300 flex justify-between gap-2'><IoLogoJavascript />JAVASCRIPT</a>
+                        <a href="" className=' text-cyan-300 flex justify-between gap-2'><FaReact />REACT</a>
+                    </div>
                 </div>
-                <br />
-                <div className='flex justify-around items-center text-2xl gap-5'>
-                <a href="" className=' text-green-300 flex justify-between gap-2'><IoLogoSass />SASS</a>
-                <a href="" className=' text-red-500 flex justify-between gap-2'><BsBootstrap />
-                SASS</a>
-                </div>
-                <br />
-                <div className='flex justify-around items-center text-2xl gap-5'>
-    <a href="" className=' text-yellow-300 flex justify-between gap-2'><IoLogoJavascript />JAVASCRIPT</a>
-    <a href="" className=' text-cyan-300 flex justify-between gap-2'><FaReact />REACT</a>
-                </div>
-               </div>
 
             </div>
         </div>

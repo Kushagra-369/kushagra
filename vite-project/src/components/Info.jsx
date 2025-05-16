@@ -15,7 +15,7 @@ export default function Info() {
 
     <div className= ' items-center md:flex justify-between  md:px-5 py-10 bg-black ' >
      <div className='px-10 md:px-0'>
-       <div className='h-[70px] w-[300] md:w-[450px] md:text-2xl text-white ' >
+       <div className='h-[70px] w-[300] md:w-[470px] md:text-2xl text-white ' >
 
         <TypeAnimation
       sequence={[
