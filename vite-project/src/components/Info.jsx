@@ -36,7 +36,7 @@ export default function Info() {
           <div className='text-3xl md:text-6xl text-white'>HEY , I AM</div>
           <div className=' text-3xl md:text-5xl py-1 text-white '>KUSHAGRA CHHABRA</div>
           <div className='md:text-2xl py-4 text-white'> I am a frontend developer within 3 months </div>
-          <div className=' text-white flex gap-15 items-center py-5 '>
+          <div className=' text-white flex gap-10 md:gap-15 items-center py-5 '>
             <div className='flex items-center  py-10 border-2 border-cyan-300 h-20 w-50 rounded-2xl text-2xl text-center'>
               <h1 className=' px-5'>Download</h1> <a href=""><IoDownloadOutline />  </a>
             </div>
