@@ -3,6 +3,7 @@ import { FaBars } from "react-icons/fa6";
 import { GiSplitCross } from "react-icons/gi";
 import { Link } from 'react-scroll';
 
+
 export default function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
